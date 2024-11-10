@@ -162,19 +162,56 @@
     width: 0;
     transition: width 1s ease;
   }
+  .image-gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.image-container {
+  position: relative;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.image-container:hover {
+  transform: scale(1.05);
+}
+
+.image-container img {
+  width: 100%;
+  height: 200;
+  object-fit: cover;
+  display: block;
+}
+
+.image-caption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(44, 62, 80, 0.8);
+  color: white;
+  padding: 0.5rem;
+  font-size: 0.9rem;
+}
     </style>
     
   </head>
   <body>
   <div class="container">
     <header>
-        <img src="image/me.JPG" width="250px" height="400px" />
         <h1>WHO IS A handsome BOY ?</h1>
+        <img src="image/me.JPG" width="250px" height="400px" />
+        <h1>YENFENG TSAI !!</h1>
+        <h3>Chung Yuan Christian University</h3>
       <div class="profile">
         
         <div>
-          <h1>YENFENG TSAI</h1>
-          <h3>Chung Yuan Christian University</h3>
+          
           <div class="contact-info">
             <div class="contact-item">
               <svg class="icon" viewBox="0 0 24 24">
@@ -187,6 +224,30 @@
                 <path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm-8 2.75c1.24 0 2.25 1.01 2.25 2.25s-1.01 2.25-2.25 2.25S9.75 10.24 9.75 9 10.76 6.75 12 6.75zM17 17H7v-1.5c0-1.67 3.33-2.5 5-2.5s5 .83 5 2.5V17z"/>
               </svg>
               <a href="https://www.instagram.com/yenfenii/">IG:yenfenii</a>
+            </div>
+            <div class="contact-item">
+              <svg class="icon" viewBox="0 0 24 24">
+                <path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm-8 2.75c1.24 0 2.25 1.01 2.25 2.25s-1.01 2.25-2.25 2.25S9.75 10.24 9.75 9 10.76 6.75 12 6.75zM17 17H7v-1.5c0-1.67 3.33-2.5 5-2.5s5 .83 5 2.5V17z"/>
+              </svg>
+              <a href="https://www.instagram.com/yenfenii/">FB:蔡岩夆</a>
+            </div>
+            <div class="contact-item">
+              <svg class="icon" viewBox="0 0 24 24">
+                <path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm-8 2.75c1.24 0 2.25 1.01 2.25 2.25s-1.01 2.25-2.25 2.25S9.75 10.24 9.75 9 10.76 6.75 12 6.75zM17 17H7v-1.5c0-1.67 3.33-2.5 5-2.5s5 .83 5 2.5V17z"/>
+              </svg>
+              <a href="https://www.instagram.com/yenfenii/">LINE:0906186722</a>
+            </div>
+            <div class="contact-item">
+              <svg class="icon" viewBox="0 0 24 24">
+                <path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm-8 2.75c1.24 0 2.25 1.01 2.25 2.25s-1.01 2.25-2.25 2.25S9.75 10.24 9.75 9 10.76 6.75 12 6.75zM17 17H7v-1.5c0-1.67 3.33-2.5 5-2.5s5 .83 5 2.5V17z"/>
+              </svg>
+              <a href="https://www.instagram.com/yenfenii/">Onlyfans:Are you my baby?</a>
+            </div>
+            <div class="contact-item">
+              <svg class="icon" viewBox="0 0 24 24">
+                <path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm-8 2.75c1.24 0 2.25 1.01 2.25 2.25s-1.01 2.25-2.25 2.25S9.75 10.24 9.75 9 10.76 6.75 12 6.75zM17 17H7v-1.5c0-1.67 3.33-2.5 5-2.5s5 .83 5 2.5V17z"/>
+              </svg>
+              <a href="https://www.instagram.com/yenfenii/">Yes</a>
             </div>
           </div>
         </div>
@@ -204,12 +265,12 @@
         <p>星座：天蠍座</p>
         <p>MBTI:ENFP</p>
         <P>『用色彩點綴世界，用熱情燃燒生命』</P>
-        <h2>Traits<img src="image/817567.png" width="20px" height="20px"/></h2>
+        <h2>Traits<img src="image/817567.png" width="50px" height="50px"/></h2>
              <p>理想主義者、溫和穩健、創造力、同理心、社交能力、</p>
 
-        <h2>Traits<img src="image/817567.png" width="20px" height="20x"/></h2>
+        <h2>Traits<img src="image/817567.png" width="50px" height="50x"/></h2>
               <p>倔強頑固、自我中心、容易分心</p>
-        <h2>About me</h2>
+        <h2>About me <img src="image/12548736.png" width="50px" height="50x"></h2>
               </p>有個性，感情也豐富。擁有應付各種狀況的機智，
                 是一個理想主義者，個性溫和、平穩，但也有倔強和頑固的一面。
                 具有創造力和感化別人的力量，兼且擁有豐富的同情心。</p>
@@ -257,6 +318,60 @@
         <p>在高中時，是學校吉他社幹部，進了中原也加入了吉他社及熱音社，讓我對吉他愛不釋手</p>
         <h3>瑜伽</h3>
         <p>因為跟著媽媽聯席瑜伽的關係，讓我對瑜伽也產生了極大的興趣</p>
+      </div>
+    </section>
+    
+    <section class="section">
+      <h2>澎湖行</h2>
+      <div class="image-gallery">
+        <div class="image-container">
+          <img  src="image/IMG_8925.JPG" width="125" height="200">
+          <div class="image-caption">澎湖灣 澎湖灣 外婆的澎湖灣</div>
+        </div>
+        <div class="image-container">
+          <img src="image/IMG_9026.JPG" width="200" height="400">
+          <div class="image-caption">有我許多的童年幻想</div>
+        </div>
+        <div class="image-container">
+          <img src="image/IMG_9195.JPG" width="200" height="400">
+          <div class="image-caption">陽光 沙灘 海浪 仙人掌</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>台南行</h2>
+      <div class="image-gallery">
+        <div class="image-container">
+          <img  src="image/IMG_6524.JPG" width="125" height="200">
+          <div class="image-caption">我愛台妹</div>
+        </div>
+        <div class="image-container">
+          <img src="image/IMG_6547.JPG" width="200" height="400">
+          <div class="image-caption">台妹愛我</div>
+        </div>
+        <div class="image-container">
+          <img src="image/IMG_6567.JPG" width="200" height="400">
+          <div class="image-caption">對我來說 林志玲算什麼</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>流星雨</h2>
+      <div class="image-gallery">
+        <div class="image-container">
+          <img  src="image/IMG_5826.jpg" width="125" height="200">
+          <div class="image-caption">陪你去看流星雨</div>
+        </div>
+        <div class="image-container">
+          <img src="image/IMG_5832.jpg" width="200" height="400">
+          <div class="image-caption">落在這地球上</div>
+        </div>
+        <div class="image-container">
+          <img src="image/IMG_5833.jpg" width="200" height="400">
+          <div class="image-caption">讓你的淚落在我肩膀</div>
+        </div>
       </div>
     </section>
   </div>
